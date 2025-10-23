@@ -58,14 +58,14 @@ body {
   justify-content: center;
   gap: 10px;
   background: var(--azul);
-  padding: 10px;
+  padding: 8px;
 }
 
 .nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 15px;
+  padding: 8px 14px;
   border-radius: 10px;
   transition: background 0.3s;
 }
