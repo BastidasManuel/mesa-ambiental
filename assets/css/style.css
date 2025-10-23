@@ -56,9 +56,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 9px;
   background: var(--azul);
-  padding: 8px;
+  padding: 9px;
 }
 
 .nav a {
