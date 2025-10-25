@@ -1,83 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesa Ambiental de San Jerónimo</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <div class="grid-container">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa Ambiental de San Jerónimo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
 
-    <header class="header">
-      <img src="assets/images/SanJeronimoConDrawio.png" alt="San Jerónimo" class="header-img">
-      <div class="header-text">
-        <h1>Mesa Ambiental de San Jerónimo</h1>
-        <p>Guardianes de la naturaleza y el territorio</p>
-      </div>
-      <nav class="nav">
-        <a href="#zonas"><i class="fa-solid fa-tree"></i> Zonas</a>
-        <a href="#agua"><i class="agua fa-droplet"></i> Agua</a>
-        <a href="#territorio"><i class="territorio fa-map"></i> Territorio</a>
-        <a href="#arboles"><i class="fa-solid fa-seedling"></i> Árboles</a>
-        <a href="#fauna"><i class="fa-solid fa-dove"></i> Fauna</a>
-        <a href="#cultivos"><i class="cultivos fa-apple-whole"></i> Cultivos</a>
-        <a href="#educacion"><i class="educacion fa-book-open"></i> Educación</a>
-      </nav>
-    </header>
+  <body>
+    <div class="grid-container">
 
-    <nav class="nav">
-      <a href="#zonas"><i class="zonas fa-tree"></i> Zonas</a>
-      <a href="#agua"><i class="agua fa-droplet"></i> Agua</a>
-      <a href="#territorio"><i class="territorio fa-map"></i> Territorio</a>
-      <a href="#arboles"><i class="arboles fa-seedling"></i> Árboles</a>
-      <a href="#fauna"><i class="fauna fa-dove"></i> Fauna</a>
-      <a href="#cultivos"><i class="cultivos fa-apple-whole"></i> Cultivos</a>
-      <a href="#educacion"><i class="fa-solid fa-book-open"></i> Educación</a>
-    </nav>
+      <!-- ================= HEADER ================= -->
+      <header class="header">
+        <div class="header-content">
+          <h1>Mesa Ambiental de San Jerónimo</h1>
+          <p>Guardianes de la naturaleza y el territorio</p>
+        </div>
 
-    <main class="main">
-      <section id="zonas">
-        <h2>Zonas de Vida</h2>
-        <p>Descubre los ecosistemas del municipio y su riqueza natural.</p>
-      </section>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#zonas">Zonas</a></li>
+            <li><a href="#agua">Agua</a></li>
+            <li><a href="#territorio">Territorio</a></li>
+            <li><a href="#fauna">Fauna</a></li>
+            <li><a href="#cultivos">Cultivos</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#voces">Voces</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <section id="agua">
-        <h2>Recurso Hídrico</h2>
-        <p>Ríos, quebradas y nacimientos que dan vida a San Jerónimo.</p>
-      </section>
+      <!-- ================= MAIN ================= -->
+      <main class="main">
+        <!-- GRID 3x3 DE TEMÁTICAS -->
+        <section class="tematicas-grid" id="zonas">
+          <h2>Temáticas Principales</h2>
+          <div class="grid">
+            <div class="card">
+              <i class="fa-solid fa-tree"></i>
+              <h3>Zonas de Vida</h3>
+              <p>Bosques y ecosistemas del municipio.</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-droplet"></i>
+              <h3>Recurso Hídrico</h3>
+              <p>Ríos, quebradas y nacimientos.</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-map"></i>
+              <h3>Conoce tu Territorio</h3>
+              <p>Mapas, senderos e historia ambiental.</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-seedling"></i>
+              <h3>Árboles Emblemáticos</h3>
+              <p>Fichas y adopción de árboles.</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-dove"></i>
+              <h3>Fauna Local</h3>
+              <p>Especies emblemáticas y conservación.</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-apple-whole"></i>
+              <h3>Cultivos Tradicionales</h3>
+              <p>Café, caña y frutas tropicales.</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-tractor"></i>
+              <h3>Veredas que Conservan</h3>
+              <p>Prácticas agroecológicas sostenibles.</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-book-open"></i>
+              <h3>Educación Ambiental</h3>
+              <p>Niños, jóvenes y familias en acción.</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-microphone"></i>
+              <h3>Voces del Territorio</h3>
+              <p>Historias de líderes y sabios locales.</p>
+            </div>
+          </div>
+        </section>
+      </main>
 
-      <section id="territorio">
-        <h2>Conoce tu Territorio</h2>
-        <p>Mapas, senderos ecológicos e historia ambiental.</p>
-      </section>
+      <!-- ================= ASIDE ================= -->
+      <aside class="aside">
+        <h3>Noticias Ambientales</h3>
+        <ul>
+          <li>🌱 Nueva jornada de siembra en la vereda El Rincón</li>
+          <li>💧 Campaña: “Cuidemos el Río Aurra”</li>
+          <li>🌳 Adopta un árbol este mes</li>
+        </ul>
+      </aside>
 
-      <section id="fauna">
-        <h2>Fauna Local</h2>
-        <p>Especies que habitan nuestro territorio.</p>
-      </section>
+      <!-- ================= FOOTER ================= -->
+      <footer class="footer">
+        <p>© 2025 Mesa Ambiental de San Jerónimo | Contacto | Redes Sociales</p>
+      </footer>
 
-      <section id="cultivos">
-        <h2>Cultivos Tradicionales</h2>
-        <p>Café, caña y frutas tropicales: herencia y sostenibilidad.</p>
-      </section>
-    </main>
+    </div>
 
-    <aside class="aside">
-      <h3>Noticias Ambientales</h3>
-      <ul>
-        <li>🌱 Nueva jornada de siembra en la vereda El Rincón</li>
-        <li>💧 Campaña: “Cuidemos el Río Aurra”</li>
-        <li>🌳 Adopta un árbol este mes</li>
-      </ul>
-    </aside>
-
-    <footer class="footer">
-      <p>© 2025 Mesa Ambiental de San Jerónimo | Contacto | Redes Sociales</p>
-    </footer>
-
-  </div>
-  <script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
