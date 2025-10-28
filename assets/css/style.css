@@ -1,12 +1,26 @@
 /* ========== VARIABLES DE COLOR ========== */
-:root {
-  --verde: #3FA55B;
-  --azul: #2aace2;
-  --amarillo: #FFD233;
-  --beige: #FFEED4;
-  --marron: #5E4A3A;
+* {
   box-sizing: border-box;
 }
+:root {
+  --azul-profundo: #187ed0;
+  --azul-medio: #29aae1;
+  --azul-celeste: #2aace2;
+  --azul-oscuro: #177ccf;
+  --verde-esperanza: #4CAF50;
+  --verde-selva: #1E8449;
+  --verde-menta: #c7e8c0;
+  --verde-limon: #A4DE02;
+  --verde-pino: #20603D;
+  --verde-hoja: #3FA55B;
+  --amarillo-brillante: #fad700;
+  --amarillo-cálido: #fad600;
+  --piel-calida: #fab977;
+  --piel-suave: #fdcb8e;
+  --beige: #FFEED4;
+  --marron: #5E4A3A
+}
+
 body {
   display: grid;
   grid-template-areas:
@@ -27,7 +41,7 @@ header {
   flex-direction: column;
   justify-content: space-between; /* 🔹 Empuja el nav al fondo */
   align-items: center;
-  background-color: var(--verde);
+  background-color: var(--verde-esperanza);
   color: white;
   font-weight: bolder;
   text-align: center;
@@ -43,16 +57,29 @@ main {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    grid-auto-rows: minmax(250px, auto);
   background-color: var(--marron);
-  gap: 20px;
+  gap: 10px;
   padding: 10px;
 }
+
+aside {
+  grid-area: aside;
+  background: var(--verde-menta);
+  border: 2px solid var(--verde);
+  padding: 20px;
+  margin: 30px;
+}
+
 section {
-  background: #ffffffcc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--beige);
   border: 2px solid var(--verde);
 }
+
 footer {
   grid-area: footer;
-  background: var(--azul);
+  background: var(--azul-oscuro);
   color: white;
   text-align: center;
   padding: 20px;
@@ -72,7 +99,7 @@ li {
   font-size: 2em;
 }
 h2 {
-  font-size: 3em;
+  font-size: 2em;
   margin: 10px 0;
 }
 p {
@@ -101,12 +128,6 @@ main nav a:hover {
 }
 
 /* GRID 3x3 RESPONSIVO */
-.tematicas-grid .grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  justify-items: center;
-}
 
 .card {
   background: white;
@@ -135,33 +156,41 @@ main nav a:hover {
   margin-bottom: 10px;
 }
 
-/* ========== ASIDE ========== */
-aside {
-  grid-area: aside;
-  background: #ffffffcc;
-  border: 4px solid var(--verde);
-  padding: 20px;
-  margin: 30px;
-}
-
-.aside h3 {
-  color: var(--verde);
-}
-
-/* ========== FOOTER ========== */
 
 
-/* ========== RESPONSIVIDAD ========== */
-@media (max-width: 900px) {
-  .grid-container {
+@media (max-width: 600px) {
+  body {
     grid-template-areas:
       "header"
       "main"
       "aside"
       "footer";
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
   }
-  .header {
-    height: 40vh;
+
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    font-size: 16px;
+  }
+
+  header{
+    max-height: 30vh;
+    font-size: 16px;
+  }
+  aside{
+    max-height: 40vh;
+    font-size: 12px;
+  }
+  footer{
+    max-height: 30vh;
+    font-size: 16px;
   }
 }
+
